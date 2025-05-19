@@ -1,0 +1,32 @@
+header{
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    border-left: 0.3rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    border-bottom: 0.3rem solid transparent;
+    
+}
+
+.fire{
+    background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0),rgb(221, 102, 5));
+    border-image: linear-gradient(to bottom,rgba(228, 187, 4, 0.15),rgb(221, 102, 5));
+    border-image-slice: 1;
+}
+.plant{
+    background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0),rgb(3, 126, 19));
+    border-image: linear-gradient(to bottom,rgba(17, 209, 17, 0.15),rgb(3, 126, 19));
+    border-image-slice: 1;
+}
+.water{
+    background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0),rgb(4, 152, 221));
+    border-image: linear-gradient(to bottom,rgba(4, 230, 181, 0.15),rgb(4, 152, 221));
+    border-image-slice: 1;
+}
+
+.card img{
+    flex-grow: 0;
+}
