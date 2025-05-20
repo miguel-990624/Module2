@@ -1,0 +1,102 @@
+*{
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+}
+
+header a, nav{
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+}
+
+.logo img{
+    max-height: 10rem;   
+}
+
+.region{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+.card{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border-left: 0.3rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    border-bottom: 0.3rem solid transparent;
+    transition: 0.1s;
+    
+}
+
+.card:hover{
+    max-width: 45rem;
+    font-size: 1.2rem;
+    height: 35rem;
+}
+.card:not(:hover){
+    max-width: 30rem;
+
+}
+.fire{
+    background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0),rgb(221, 102, 5));
+    border-image: linear-gradient(to bottom,rgba(228, 187, 4, 0),rgb(221, 102, 5));
+    border-image-slice: 1;
+}
+.plant{
+    background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0),rgb(3, 126, 19));
+    border-image: linear-gradient(to bottom,rgba(17, 209, 17, 0),rgb(3, 126, 19));
+    border-image-slice: 1;
+}
+.water{
+    background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0),rgb(4, 152, 221));
+    border-image: linear-gradient(to bottom,rgba(4, 230, 181, 0),rgb(4, 152, 221));
+    border-image-slice: 1;
+}
+
+.fire:hover{
+    background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0),rgb(221, 102, 5)),url("https://st2.depositphotos.com/4559725/12241/v/450/depositphotos_122417862-stock-illustration-poke-ball-game-apps.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-image: linear-gradient(to bottom,rgba(228, 187, 4, 0),rgb(221, 102, 5));
+    border-image-slice: 1;
+}
+.plant:hover{
+    background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0),rgb(3, 126, 19)),url("https://st2.depositphotos.com/4559725/12241/v/450/depositphotos_122417862-stock-illustration-poke-ball-game-apps.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-image: linear-gradient(to bottom,rgba(17, 209, 17, 0),rgb(3, 126, 19));
+    border-image-slice: 1;
+}
+.water:hover{
+    background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0),rgb(4, 152, 221)),url("https://st2.depositphotos.com/4559725/12241/v/450/depositphotos_122417862-stock-illustration-poke-ball-game-apps.jpg");
+    border-image: linear-gradient(to bottom,rgba(4, 230, 181, 0),rgb(4, 152, 221));
+    border-image-slice: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card h2{
+    text-align: center;
+}
+
+.specs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.specs img {
+    max-width: 12rem;
+}
+
+.card summary{
+    padding: 1rem;
+    text-overflow: ellipsis;
+    white-space: wrap;
+    overflow: hidden;
+}
