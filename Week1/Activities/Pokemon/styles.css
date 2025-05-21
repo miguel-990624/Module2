@@ -1,8 +1,7 @@
 *{
     font-family: "Press Start 2P", system-ui;
-    font-weight: 400;
     font-style: normal;
-    font-size: 10px;
+    font-size: 14px;
 }
 
 header a, nav{
@@ -13,7 +12,7 @@ header a, nav{
 }
 
 .logo img{
-    max-height: 10rem;   
+    max-height: 100px;   
 }
 
 .region{
@@ -24,79 +23,86 @@ header a, nav{
 }
 
 .card{
-    height: 300px;
+    height: 550px;
+    width: 550px;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     border-left: 0.3rem solid transparent;
     border-right: 0.3rem solid transparent;
     border-bottom: 0.3rem solid transparent;
-    transition: 0.1s;
-    
+    perspective: 1000px;
 }
 
-.card:hover{
-    max-width: 45rem;
-    font-size: 1.2rem;
-    height: 35rem;
+.card .inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.75s;
+    transform-style: preserve-3d;
 }
-.card:not(:hover){
-    max-width: 30rem;
 
+.card:hover .inner{
+    transform: rotateY(180deg);
 }
-.fire{
+
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.inner .front img{
+    width: 550px;
+}
+
+.fire .inner .front{
     background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0),rgb(221, 102, 5));
     border-image: linear-gradient(to bottom,rgba(228, 187, 4, 0),rgb(221, 102, 5));
     border-image-slice: 1;
 }
-.plant{
+.plant .inner .front{
     background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0),rgb(3, 126, 19));
     border-image: linear-gradient(to bottom,rgba(17, 209, 17, 0),rgb(3, 126, 19));
     border-image-slice: 1;
 }
-.water{
+.water .inner .front{
     background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0),rgb(4, 152, 221));
     border-image: linear-gradient(to bottom,rgba(4, 230, 181, 0),rgb(4, 152, 221));
     border-image-slice: 1;
 }
 
-.fire:hover{
+.fire .inner .back{
     background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0),rgb(221, 102, 5)),url("https://st2.depositphotos.com/4559725/12241/v/450/depositphotos_122417862-stock-illustration-poke-ball-game-apps.jpg");
     background-repeat: no-repeat;
     background-position: center;
     border-image: linear-gradient(to bottom,rgba(228, 187, 4, 0),rgb(221, 102, 5));
     border-image-slice: 1;
+    transform: rotateY(180deg);
+    margin: 20px;
 }
-.plant:hover{
+.plant .inner .back{
     background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0),rgb(3, 126, 19)),url("https://st2.depositphotos.com/4559725/12241/v/450/depositphotos_122417862-stock-illustration-poke-ball-game-apps.jpg");
     background-repeat: no-repeat;
     background-position: center;
     border-image: linear-gradient(to bottom,rgba(17, 209, 17, 0),rgb(3, 126, 19));
     border-image-slice: 1;
+    transform: rotateY(180deg);
 }
-.water:hover{
+.water .inner .back{
     background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0),rgb(4, 152, 221)),url("https://st2.depositphotos.com/4559725/12241/v/450/depositphotos_122417862-stock-illustration-poke-ball-game-apps.jpg");
     border-image: linear-gradient(to bottom,rgba(4, 230, 181, 0),rgb(4, 152, 221));
     border-image-slice: 1;
     background-repeat: no-repeat;
     background-position: center;
+    transform: rotateY(180deg);
 }
 
 .card h2{
     text-align: center;
 }
 
-.specs{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.specs img {
-    max-width: 12rem;
-}
-
 .card summary{
-    padding: 1rem;
-    text-overflow: ellipsis;
-    white-space: wrap;
-    overflow: hidden;
+    padding: 25px;
 }
