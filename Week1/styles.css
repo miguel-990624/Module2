@@ -1,0 +1,88 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(240, 240, 240);
+}
+
+header{
+    
+    color: rgb(240, 240, 240);
+    background-color: rgb(30, 30, 30);
+}
+
+main{
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutMe {
+    margin: 30px;
+    background: linear-gradient(135deg, #EBB510     , #EB5410);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    border-radius: 15px;
+    font-size: 40px;
+}
+
+.aboutMe img {
+    margin: 30px;
+    width: 40%;
+    border-radius: 50%;
+}
+
+.aboutMe .description{
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 30px;
+}
+
+.projects{
+    margin: 30px;
+    background: linear-gradient(225deg, #EBB510, #EB9B10);
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.projects h2{
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.projects summary {
+    display: flex;
+    width: 45%;
+}
+
+.projects table{
+    border: 3px solid #EB2E10 ;
+    border-collapse: collapse;
+    margin: 30px;
+    width: 65%;
+}
+
+.projects aside{
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+}
+.artstation{
+    border-radius: 15px;
+    width: 45%;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 1500px) {
+    .aboutMe{
+        flex-wrap: wrap;
+    }
+  }
+
