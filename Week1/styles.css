@@ -5,23 +5,42 @@ body {
     background-color: rgb(240, 240, 240);
 }
 
-header{
+#navbar{
+    
     height: 60px;
-    color: rgb(240, 240, 240);
     background-color: rgb(30, 30, 30);
+    z-index: 100;
+}
+
+header nav a:link{
+    text-decoration: none;
+}
+
+header nav a:visited{
+    text-decoration: none;
+}
+
+header nav a:hover{
+    background: linear-gradient(to bottom, #EBB510, #EB5410);
     
 }
+
+h1{
+    text-align: center;
+}
+
 header nav{
-    position: sticky;
-    top: 0;
-    overflow: hidden;
     display: flex;
     justify-content: end;
+    position: sticky;
+    top: 0;
 }
 
 header nav a{
-    margin: 15px;
+    
+    padding: 15px;
     font-size: 25px;
+    color: rgb(240, 240, 240);
 
 }
 
@@ -33,19 +52,21 @@ main{
 
 .aboutMe {
     margin: 30px;
-    background: linear-gradient(135deg, #EBB510     , #EB5410);
+    background: linear-gradient(135deg, #EBB510, #EB5410);
     display: flex;
     justify-content: space-around;
     align-items: center;
     max-width: 100%;
     border-radius: 15px;
     font-size: 40px;
+    box-shadow: 0px 10px 20px 0.5px darkgray;
 }
 
 .aboutMe img {
     margin: 30px;
     width: 40%;
     border-radius: 50%;
+    box-shadow: 0px 10px 20px 0.5px #eb2d107c;
 }
 
 .aboutMe .description{
@@ -62,6 +83,7 @@ main{
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
+    box-shadow: 0px 10px 20px 0.5px darkgray;
 }
 
 .projects h2{
@@ -79,34 +101,45 @@ main{
     margin: 15px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-around;
     width: 45%;
 }
 
 .projects table{
-    border: 3px #EB2E10 ;
     border-collapse: collapse;
+    display: flex;
+    justify-content: space-evenly;
     width: 95%;
 }
 
+
+tr{
+    border: 1px solid #EB9B10;
+    font-size: 25px;
+    background-color: #EB5410
+}
+
 td{
-     text-align: center;
-}
-
-/* tr:nth-child(1){
-    background-color: #EB2E10;
-
-}
-
-tr:nth-child(2){
-    background-color: #EB5410;
-
-}
-
-tr:nth-child(3){
+    border: 1px solid #EB9B10;
+    font-size: 20px;
+    text-align: center;
     background-color: #EB7B11;
+}
 
-} */
+.projects h4{
+    margin: 10px;
+    font-size: 25px;
+}
+
+ul{
+    margin: 10px;
+}
+
+li{
+    list-style-type: none;
+    font-size: 25px;
+}
 
 .projects aside{
     margin: 15px;
@@ -118,6 +151,7 @@ tr:nth-child(3){
     border-radius: 15px;
     width: 45%;
     margin: 10px;
+    box-shadow: 0px 10px 20px 0.5px #eb2d107c;
 }
 
 .contact{
@@ -128,6 +162,7 @@ tr:nth-child(3){
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
+    box-shadow: 0px 10px 20px 0.5px darkgray;
 }
 .contact h2{
     font-size: 50px;
@@ -137,27 +172,58 @@ tr:nth-child(3){
 }
 
 .contact aside{
-    width: 40%;
-    margin: 30px;
+    width: 30%;
+    margin: 15px;
 }
 
 .contact form{
-    width: 40%;
-    margin: 30px;
+    width: 60%;
+    margin: 15px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-content: center;
 }
 
-.contact form label{
-    width: 25%;
-    margin: 5px;
-
+.contact form button{
+    width: 20%;
+    height: 20%;
+    font-size: 25px;
+    border: none;
+    background-color: #eb9b109f;
+    border-radius: 10px;
 }
+
+.info{
+    width: 100%;
+}
+
 .fillable{
-    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     margin: 5px;
 
+}
+
+.fillable label{
+    font-size: 25px;
+    width: 25%;
+    border-radius: 10px;
+}
+
+.fillable input, .fillable textarea{
+    font-size: 25px;
+    border: none;
+    background-color: #ebb41057;
+    width: 75%;
+    border-radius: 10px;
+
+}
+
+.contact aside p{
+    vertical-align: top;
+    font-size: 25px;
 }
 
 footer{
@@ -166,16 +232,78 @@ footer{
     background-color: white;
     size: 100%;
     display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
 
 }
+footer a{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.github{
-    width: 10%;
+.logo{
+    width: 20%;
 }
 
 @media only screen and (max-width: 1500px) {
     .aboutMe{
         flex-wrap: wrap;
+        font-size: 25px;
+    }
+    .aboutMe img{
+        width: 80%;    
+    }
+
+    .projects{
+        flex-direction: column;
+        justify-content: center ;
+        align-content: center;
+    }
+
+    .projects summary{
+        width: 90%;
+    }
+
+    .projects aside{
+        width: 90%;
+    }
+
+    .contact aside{
+        width: 90%;
+    }
+
+    .fillable label{
+        font-size: 25px;
+        width: 90%;
+        border-radius: 10px;
+    }
+    
+    .fillable input, .fillable textarea{
+        font-size: 25px;
+        border: none;
+        background-color: #ebb41057;
+        width: 90%;
+        border-radius: 10px;
+    
+    }
+    .contact form button{
+        width: 30%;
+        height: 30%;
+        font-size: 20px;
+        border: none;
+        background-color: #eb9b109f;
+        border-radius: 10px;
+    }
+    
+  }
+  @media only screen and (max-width: 900px) {
+    .artstation{
+        border-radius: 15px;
+        width: 95%;
+        margin: 10px;
     }
   }
-
