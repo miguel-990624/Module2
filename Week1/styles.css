@@ -6,9 +6,23 @@ body {
 }
 
 header{
-    
+    height: 60px;
     color: rgb(240, 240, 240);
     background-color: rgb(30, 30, 30);
+    
+}
+header nav{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+}
+
+header nav a{
+    margin: 15px;
+    font-size: 25px;
+
 }
 
 main{
@@ -42,7 +56,7 @@ main{
 
 .projects{
     margin: 30px;
-    background: linear-gradient(225deg, #EBB510, #EB9B10);
+    background: linear-gradient(45deg, #EBB510, #EB5410);
     border-radius: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -55,21 +69,47 @@ main{
     text-align: center;
     width: 100%;
 }
-
+.subtitle{
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
 .projects summary {
+    margin: 15px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     width: 45%;
 }
 
 .projects table{
-    border: 3px solid #EB2E10 ;
+    border: 3px #EB2E10 ;
     border-collapse: collapse;
-    margin: 30px;
-    width: 65%;
+    width: 95%;
 }
 
+td{
+     text-align: center;
+}
+
+/* tr:nth-child(1){
+    background-color: #EB2E10;
+
+}
+
+tr:nth-child(2){
+    background-color: #EB5410;
+
+}
+
+tr:nth-child(3){
+    background-color: #EB7B11;
+
+} */
+
 .projects aside{
-    margin: 30px;
+    margin: 15px;
     display: flex;
     flex-wrap: wrap;
     width: 45%;
@@ -78,6 +118,59 @@ main{
     border-radius: 15px;
     width: 45%;
     margin: 10px;
+}
+
+.contact{
+    margin: 30px;
+    background: linear-gradient(135deg, #EBB510, #EB5410);
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.contact h2{
+    font-size: 50px;
+    width: 100%;
+    margin: 30px;
+    text-align: center;
+}
+
+.contact aside{
+    width: 40%;
+    margin: 30px;
+}
+
+.contact form{
+    width: 40%;
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contact form label{
+    width: 25%;
+    margin: 5px;
+
+}
+.fillable{
+    width: 65%;
+    margin: 5px;
+
+}
+
+footer{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    size: 100%;
+    display: flex;
+
+}
+
+.github{
+    width: 10%;
 }
 
 @media only screen and (max-width: 1500px) {

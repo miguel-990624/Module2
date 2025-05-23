@@ -10,13 +10,13 @@
 <body>
     <header>
         <nav>
-            <a>About Me</a>
-            <a>Projects</a>
-            <a>Contact</a>
+            <a href="#presentation">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
     <main>
-        <section class="presentation">
+        <section class="presentation" id="presentation">
             <h1>Miguel Molina - Riwi Developer</h1>
         </section>
         <section class="aboutMe">
@@ -27,9 +27,10 @@
                 <p>I currently am learning development, I aim to become a back-end developer. And one day learn to code games, I would really love to be part of the gaming industry. I am an Engineer in digital entertainment with emphasis in animation, I studied so I could create games, and I found is not the animation i want to take part in but the coding.</p>
             </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2>Projects</h2>
             <summary>
+                <h3 class="subtitle">Technologies</h3>
                 <table>
                     <tr>
                         <th>Project Name</th>
@@ -47,7 +48,7 @@
                         <td><a href="https://github.com/miguel-990624/Reto3">https://github.com/miguel-990624/Reto3</a></td>
                     </tr>
                 </table>
-                <h3>Technologies</h3>
+                <h4>Areas of expertise:</h4>
                 <ul>
                     <li>Python</li>
                     <li>HTML5</li>
@@ -57,7 +58,7 @@
                 </ul>
             </summary>
             <aside>
-                <h2>Art Projects</h2>
+                <h3 class="subtitle">Art Projects</h3>
                 <video class="artstation" controls>
                     <source src="https://cdn.artstation.com/p/video_sources/000/319/758/kirby-vf.mp4" type="video/mp4">
                 </video>
@@ -65,20 +66,27 @@
                 <img class="artstation" src="https://cdna.artstation.com/p/assets/images/images/034/958/964/large/miguel-angel-molina-gutierrez-tbrender-007.jpg?1613699178">
             </aside>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
+            <h2>Contat Me</h2>
+            <aside>
+                <p>
+                    Lets get in touch, I am doing my best to get to be the best programer I can be, I would really apreciate you betting on me, I will go above and beyond for your project.
+                </p>
+            </aside>
             <form>
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required/>
+                <input class="fillable" type="text" id="name" name="name" required/>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required/>
+                <input class="fillable" type="email" id="email" name="email" required/>
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" row="4" required></textarea>
-                <button type="submit" value="Send"></button>
+                <textarea class="fillable" id="message" name="message" row="4" required></textarea>
+                <button type="submit" value="Send">Send</button>
             </form>
         </section>
     </main>
     <footer>
-        <a href="https://github.com/miguel-990624"><img alt="github profile" src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"></a>
+        <a href="https://github.com/miguel-990624"><img class="github"  alt="github profile" src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"></a>
+        <h3>Webpage created by Miguel Molina</h3>
     </footer>
 </body>
 </html>
