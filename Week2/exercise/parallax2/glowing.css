@@ -1,0 +1,117 @@
+.img-container{
+    margin: 20px;
+    min-width: 500px;
+    min-height: 500px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container::after{
+    content: "";
+    z-index: -1px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+}
+
+.img-container::before{
+    content: "";
+    margin: 20px;
+    background: linear-gradient(
+        45deg,#FFF03D, #F402A6, #FFF03D
+    ) ;
+    background-size: 600%;
+    z-index: -1px;
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    left: 100;
+    top: 100;
+    border-radius: 50%;
+    transition: opacity .3s ease-in-out;
+    opacity: 1;
+    animation: glowing 15s linear infinite;
+    filter: blur(1px);
+}
+
+
+.button{
+    margin: 15px;
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    position: relative;
+    z-index: 0;
+    border-radius: 15px;
+}
+
+.button::after{
+    content: "";
+    z-index: -1px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.button::before{
+    content: "";
+    background: linear-gradient(
+        45deg,#FFF03D, #F402A6, #FFF03D
+    ) ;
+    background-size: 600%;
+    z-index: -1px;
+    position: absolute;
+    width: calc(100% + 10px);
+    height: calc(100% + 8px);
+    left: -5px;
+    top: -4px;
+    border-radius: 10px;
+    transition: opacity .3s ease-in-out;
+    opacity: 1;
+    animation: glowing 15s linear infinite;
+    filter: blur(1px);
+}
+
+@keyframes glowing{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .aboutMe .description{
+        margin-left: 0px;
+    }
+
+    .img-container::before{
+        width: 90%;
+        height: 110%;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+
+    .img-container::before{
+        width: 90%;
+        height: 90%;
+    }
+}

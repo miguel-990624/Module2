@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+body {
+    margin: 0;
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 100vw;
+    background-color: black;
+    z-index: 100;
+    display: flex;
+    justify-content: end;
+}
+
+header nav a:link{
+    text-decoration: none;
+}
+
+header nav a:visited{
+    text-decoration: none;
+}
+
+header nav a:hover{
+    background-image: linear-gradient(to bottom, #EBB510, #EB5410);
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 5px  #E91F8F;
+}
+
+
+header nav a{
+
+    padding: 15px;
+    font-size: 25px;
+    color: rgb(240, 240, 240);
+    font-family: "Joti One", serif;
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+main{
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
+
+.aboutMe {
+    margin-top: 200px;
+    padding: 50px;
+    padding-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+    background-color: rgb(10, 10, 10);
+    
+}
+
+.profilePicture{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: 1;
+} 
+
+.aboutMe .description{
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 200px;
+    text-shadow: 0px 0px 5px 1.5px #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100vw;
+    background-color: rgb(10, 10, 10);
+}
+
+.projects h2{
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+}
+.subtitle{
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+.projects summary {
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 45%;
+}
+
+.projects h3{
+    margin: 10px;
+    font-size: 25px;
+}
+
+ul{
+    margin: 10px;
+}
+
+li{
+    list-style-type: none;
+    font-size: 25px;
+}
+
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+.contact h2{
+    font-size: 50px;
+    width: 100%;
+    margin: 30px;
+    text-align: center;
+}
+
+.contact aside{
+    width: 30%;
+    margin: 15px;
+}
+
+.contact form{
+    width: 60%;
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.info{
+    width: 100%;
+}
+
+.fillable{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5px;
+
+}
+
+.fillable label{
+    font-size: 25px;
+    width: 25%;
+    border-radius: 10px;
+}
+
+.fillable input, .fillable textarea{
+    font-size: 25px;
+    border: none;
+    background-color: #ebb41057;
+    width: 75%;
+    border-radius: 10px;
+
+}
+
+.contact aside p{
+    vertical-align: top;
+    font-size: 25px;
+}
+
+footer{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    size: 100%;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
+
+}
+footer a{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 20%;
+}
+
+@media only screen and (max-width: 1500px) {
+    .aboutMe{
+        flex-wrap: wrap;
+        font-size: 25px;
+    }
+    .aboutMe img{
+        width: 80%;    
+    }
+
+    .projects{
+        flex-direction: column;
+        justify-content: center ;
+        align-content: center;
+    }
+
+    .projects summary{
+        width: 90%;
+    }
+
+    .projects aside{
+        width: 90%;
+    }
+
+    .contact aside{
+        width: 90%;
+    }
+
+    .fillable label{
+        font-size: 25px;
+        width: 90%;
+        border-radius: 10px;
+    }
+    
+    .fillable input, .fillable textarea{
+        font-size: 25px;
+        width: 90%;
+        border-radius: 10px;
+    
+    }
+    .contact form button{
+        width: 30%;
+        height: 30%;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    
+  }
+  @media only screen and (max-width: 900px) {
+    .artstation{
+        border-radius: 15px;
+        width: 95%;
+        margin: 10px;
+    }
+  }
