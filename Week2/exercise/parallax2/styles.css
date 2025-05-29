@@ -1,7 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron:wght@400..900&display=swap');
+
 
 body {
     margin: 0;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2{
+    font-family: "Monoton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #navbar{
@@ -27,7 +38,7 @@ header nav a:hover{
     background-image: linear-gradient(to bottom, #EBB510, #EB5410);
     background-clip: text;
     color: transparent;
-    text-shadow: 2px 2px 5px  #E91F8F;
+    text-shadow: 2px 2px 2px #E91F8F;
 }
 
 
@@ -36,9 +47,7 @@ header nav a{
     padding: 15px;
     font-size: 25px;
     color: rgb(240, 240, 240);
-    font-family: "Joti One", serif;
-    font-family: "Oxanium", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Monoton", sans-serif;
     font-weight: 400;
     font-style: normal;
 
@@ -47,10 +56,11 @@ header nav a{
 main{
     background-color: rgb(10, 10, 10);
     color: white;
+    margin: 0;
 }
 
 .aboutMe {
-    margin-top: 200px;
+    
     padding: 50px;
     padding-top: 200px;
     display: flex;
@@ -161,6 +171,8 @@ li{
 }
 
 .fillable label{
+    text-align: center;
+    align-self: center;
     font-size: 25px;
     width: 25%;
     border-radius: 10px;
@@ -169,7 +181,7 @@ li{
 .fillable input, .fillable textarea{
     font-size: 25px;
     border: none;
-    background-color: #ebb41057;
+    background: linear-gradient(45deg,#FFF03D, #F402A6);
     width: 75%;
     border-radius: 10px;
 
@@ -181,8 +193,6 @@ li{
 }
 
 footer{
-    padding: 0;
-    margin: 0;
     background-color: white;
     size: 100%;
     display: flex;
