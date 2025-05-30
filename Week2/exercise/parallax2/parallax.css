@@ -23,12 +23,9 @@
     z-index: -1;
 }
 
-h1{
-    font-size: 7rem;
-    color: white;
-    text-shadow: 0 0 5px black;
+.middleground{
     z-index: -1;
-    transform: translateZ(-8px) scale(1.8);
+    transform: translateZ(-7px) scale(1.2);
 }
 
 .background, .foreground{
