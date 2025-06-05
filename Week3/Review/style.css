@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    margin: 0;
+}
+
+header a, nav{
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+}
+
+.logo img{
+    max-height: 100px;   
+}
+
+.container{
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+}
+
+@media (max-width: 900px) {
+    .container{
+        padding: 0;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+}
+
+@media (max-width: 425px) {
+    .container{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+}
