@@ -1,6 +1,7 @@
 .card{
-    height: 60vh;
+    height: 80vh;
     width: 30vw;
+    padding: auto;
     background-color: transparent;
     display: flex;
     flex-direction: column;
@@ -8,6 +9,7 @@
     border-right: 0.3rem solid transparent;
     border-bottom: 0.3rem solid transparent;
     perspective: 1000px;
+    overflow:hidden;
 }
 
 .card .inner{
@@ -32,6 +34,8 @@
     display: flex;
     width: 100%;
     height: 100%;
+    justify-content: center;
+    align-items: center;
     object-fit:scale-down;
 }
 
@@ -41,8 +45,8 @@
 }
 
 .fav .inner .front{
-    background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0),rgb(221, 102, 5));
-    border-image: linear-gradient(to bottom,rgba(228, 187, 4, 0),rgb(221, 102, 5));
+    background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0),rgb(161, 70, 219));
+    border-image: linear-gradient(to bottom,rgba(228, 187, 4, 0),rgb(161, 70, 219));
     border-image-slice: 1;
 }
 
@@ -63,10 +67,10 @@
 }
 
 .fav .inner .back{
-    background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0),rgb(221, 102, 5)),url("https://st2.depositphotos.com/4559725/12241/v/450/depositphotos_122417862-stock-illustration-poke-ball-game-apps.jpg");
+    background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0),rgb(161, 70, 219)),url("https://st2.depositphotos.com/4559725/12241/v/450/depositphotos_122417862-stock-illustration-poke-ball-game-apps.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    border-image: linear-gradient(to bottom,rgba(228, 187, 4, 0),rgb(221, 102, 5));
+    border-image: linear-gradient(to bottom,rgba(228, 187, 4, 0),rgb(161, 70, 219));
     border-image-slice: 1;
     transform: rotateY(180deg);
 }
@@ -102,24 +106,21 @@
 
 .card summary{
     padding: 25px;
+    
 }
 
 @media (max-width: 900px) {
     .card{
-        height: 50vh;
+        height: 70vh;
         width: 45vw;
     }
     
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
     .card{
-        height: 45vh;
+        height: 85vh;
         width: 95vw;
-    }
-
-    .back summary{
-        display: none;
     }
     
 }
