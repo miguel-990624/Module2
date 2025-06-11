@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+}
+
+header{
+    background-color: #F2CB05;
+}
+
+nav{
+    max-width: 1200px;
+    height: 100px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 160px 1fr 390px;
+    overflow: hidden;
+
+}
+
+nav .location{
+    display: flex;
+}
+nav .Envio{    
+    justify-self: end;
+}
+
+.location div{
+    width: 50%;
+    height: 30%;
+}
+
+nav form{
+    display: flex;
+    justify-content: center;
+}
+
+nav form input{
+    width: 70%;
+}
+
+.menu{
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.shop{
+    justify-self: center;
+}
+
+.acount{
+    justify-self: end;
+}
